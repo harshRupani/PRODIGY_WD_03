@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="topnav" id="mytopnav">
+        <a href="../PRODIGY_WD_01/responsive_nav.html" class="active">Home</a>
+        <a href="../PRODIGY_WD_02/stopwatch.html">Stopwatch</a>
+        <a href="../PRODIGY_WD_04/portfolio.html">Portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="myfunc()"><i class="fa-solid fa-bars"></i></a>
+    </div>
+    <div id="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="mode">
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider"></span>
+            </label>
+            <span id="modeText">Two Players</span>
+        </div>
+        <h2 id="status"></h2>
+        <div id="cells">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+        
+        <button id="restartbtn">Restart</button>
+    </div>
+    <script src="tictac.js"></script>
+</body>
+</html>
